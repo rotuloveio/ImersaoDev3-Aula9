@@ -12,9 +12,13 @@ body {
 	box-shadow: 6px 6px 6px #0e1d2f;
 }
 
+.cabecalho {
+	display: flex;
+	justify-content: space-between;
+}
+
 .perfil {
 	display: flex;
-	align-items: center;
 }
 
 .perfil-foto {
@@ -41,19 +45,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	background: #101010;
-	margin: 64px;
+	margin-top: 32px;
 	border-radius: 20px;
+	padding: 32px;
+	box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
 }
 
 ul {
 	list-style-type: none;
 }
 
-li {
-	padding: 20px;
-}
-
-a {
+.projetos-item a {
 	color: #00ff00;
 	text-decoration: none;
 }
@@ -62,4 +64,82 @@ a {
 	max-height: 30px;
 	border-radius: 30px;
 	background-color: #ffffff;
+}
+
+.projetos-titulo {
+	list-style: none;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.projetos-item {
+	list-style-type: none;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 56px;
+}
+
+.tema button {
+	align-self: flex-end;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 8px 16px;
+	background: #101010;
+	border-radius: 100px;
+	color: #00ff00;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	padding: 20px;
+	text-decoration: none;
+}
+
+a {
+	color: #00ff00;
+	text-decoration: none;
+}
+
+.light {
+	background: url("https://www.teahub.io/photos/full/15-156299_blue-matrix-wallpapers-picture-sdeerwallpaper-data-src.jpg");
+}
+
+.light .container {
+	background: #146e8e;
+}
+
+.light .projetos {
+	color: #dee9ec;
+	background-color: #2596be;
+}
+
+.light .cabecalho {
+	color: #dee9ec;
+}
+
+.light .tema button {
+	background: #2596be;
+	color: #dee9ec;
+	border: 2px solid #f7f7f7;
+}
+
+.light a {
+	color: white;
+	text-decoration: none;
+}
+
+iframe {
+	height: 400px;
+	width: 500px;
+	border: none;
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1em 0;
+	padding: 1em;
 }
